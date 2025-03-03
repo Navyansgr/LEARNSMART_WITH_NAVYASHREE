@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to LearnSmart</title>
+  <style>
+    /* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fc;
+      color: #333;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #002147, #0056b3);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 15px;
+      transition: all 0.3s ease-in-out;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+    }
+
+    /* Pop-up effect */
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background: #ffcc00;
+      left: 50%;
+      bottom: -5px;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    /* Hero Section */
+    main {
+      padding: 50px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #003366, #0073e6);
+      color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    main h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .intro-text {
+      font-size: 18px;
+      color: #dcdcdc;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #002147;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 25px;
+      transition: transform 0.3s ease, background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(255, 204, 0, 0.4);
+    }
+
+    .cta-button:hover {
+      background-color: #e6b800;
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .cta-button {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to LearnSmart with Navyashree</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="interview.html">Interview Prep</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="internship&job.html">Internship</a></li>
+        <li><a href="links.html">All You Wanted</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>LearnSmart - Your Gateway to Knowledge. Don't worry, we are here to help you!</h2>
+    <p class="intro-text">Explore a variety of courses, take quizzes, track your progress, and connect with experts!</p>
+    <a href="courses.html" class="cta-button">Get Started</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 LearnSmart with Navyashree. All Rights Reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
